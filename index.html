@@ -1,0 +1,542 @@
+<!doctype html>
+<html >
+ <head>
+  <meta charset="UTF-8">
+  <title>【西安二手电脑交易市场】-爪子二手电脑直卖网</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/login_quit.css">
+  <link rel="stylesheet" href="css/lift.css">
+  <style>  
+  </style> 
+ </head>
+ <body>
+<!--页面头部    -->
+<header id="header">
+<img src="img/loading.gif" alt="加载中..." >
+</header>
+<!--页面广告  -->
+    <div class="banner">
+	 <ul class="image">
+		<li>
+        <a href="03_product_details.html?lid=8">
+        <img src="img/banner/banner4.png" class="change" >
+        </a>
+        </li>
+		<li>
+      <a href="03_product_details.html?lid=8">
+        <img src="img/banner/banner3.png" class="change" >
+        </a>
+        </li>
+		<li>
+       <a href="03_product_details.html?lid=8">
+        <img src="img/banner/banner2.png" class="change" >
+        </a>
+        </li>
+		<li>
+       <a href="03_product_details.html?lid=8">
+        <img src="img/banner/banner1.png" class="change" >
+        </a>
+        </li>		
+	 </ul>
+	  <ul class="point">
+		<li><em></em></li>
+		<li><em></em></li>
+		<li><em></em></li>
+		<li><em></em></li>		
+	 </ul>
+	 <a href="javascript:;" class="ck-prev" >上一张</a>	
+	 <a href="javascript:;" class="ck-next" >下一张</a>	
+	</div>
+<!--   页面引导电梯 -->
+  <div id="lift" class="lift">
+       <p><img src="img/lift/lift_conmputer_1.jpg"></p>
+       <ul>
+        <li><a href="javascript:;">顶端</a></li>
+        <li><a href="javascript:;">推荐</a></li>
+        <li><a href="javascript:;">保卖</a></li>
+        <li><a href="javascript:;">九成</a></li>
+        <li><a href="javascript:;">流程</a></li>
+        <li><a href="javascript:;">最新</a></li>
+        <li><a href="javascript:;">底端</a></li>
+     </ul>
+  </div>
+ <!--0楼 页面搜索search-->
+<div id="search" class="search">
+    <div class="buy">
+		<p class="search_box">
+           <span>我要买电脑></span>
+           <span class="input_box">
+              <input type="search" placeholder="请在这里输入你想要的产品">
+             <a href="javascript:;">搜索</a>
+           </span>
+        </p>
+		<div class="list">
+			<span>热卖品牌:</span>
+			<ul>
+				<li><a href="02_product_list.html?kw=Apple">Apple</a></li>
+				<li><a href="02_product_list.html?kw=戴尔燃7000">戴尔燃7000</a></li>
+				<li><a href="02_product_list.html?kw=华硕RX310">华硕RX310</a></li>
+				<li><a href="02_product_list.html?kw=神州">神州</a></li>
+				<li><a href="02_product_list.html?kw=弘基">弘基</a></li>
+				<li><a href="02_product_list.html?kw=联想">联想</a></li>
+			</ul>
+		</div>
+		<div class="list">
+          <span>你想要的价格:</span>
+			<ul>
+				<li><a href="02_product_list.html">500以下</a></li>
+				<li><a href="02_product_list.html">500-1000</a></li>
+				<li><a href="02_product_list.html">1000-2000</a></li>
+				<li><a href="02_product_list.html">2000-3000</a></li>
+				<li><a href="02_product_list.html">3000以上</a></li>
+			</ul>
+		</div>
+		<div class="list">
+			<span>你想买的:</span>
+			<ul>
+			<li><a href="02_product_list.html">超值</a></li>
+			<li><a href="02_product_list.html">急售</a></li>
+			<li><a href="02_product_list.html">贱卖</a></li>
+			<li><a href="02_product_list.html">准新</a></li>
+			<li><a href="02_product_list.html">保卖</a></li>
+			</ul>
+		</div>
+	</div>
+
+<!--    快速注册 -->
+    <div id="quckly_register" class="quckly_register">	
+    <!-- canvas作图 用做背景图 -->
+    <canvas width="400px" height="320px" id="c2" style="display:none">
+    </canvas>
+       <form
+       method="post" action="data/user/register.php">
+       <p class="uname_box">
+          <span>用户名:</span>
+          <input class="uname" name="uname" type="text" placeholder="用户名">
+           <span class="prompt">       
+           </span>
+       </p> 
+       <p class="upwd1_box">
+          <span>密码:</span>
+          <input class="upwd1"  type="password" placeholder="密码">
+          <span class="prompt"></span>
+       </p> 
+       <p class="upwd2_box">
+          <span>确认密码:</span>
+          <input class="upwd2" name="upwd" type="password" placeholder="确认密码:">
+           <span class="prompt"></span>
+       </p>   
+       <p class="phone_box">
+          <span>手机号:</span>
+          <input class="phone" name="pnone" type="number" placeholder="手机号">
+           <span class="prompt"></span>
+       </p> 
+       <p class="code_box">
+          <span>验证码:</span>
+          <input type="text" placeholder="验证码" class="code">
+           <button type="button" class="getcode">获取验证码</button>
+            <span class=""></span>
+       </p>
+        <p class="btn">
+           <button type="submit"  class="register">立即注册</button> 
+           <button type="reset" class="clear">清空</button>
+        </p>    
+       </form>
+    </div>
+    <div class="register_success">    
+  
+    </div>
+</div>
+<section>
+ <!--楼层 1楼 为你推荐-->
+	  <div class="floor" id="f1">
+		  <p><span>为你推荐</span>上千种精选产品  | 98%以上可申请通过 | 金融专员全程服务</p>
+		  <div>
+            <div class="">    
+			  <a href="03_product_details.html?lid=8" class="v">
+				  <img src="img/index_product/f1/59c31f32Nce4c3861.jpg!q90.jpg">
+				  <p class="on_self">2017 | 9成新</p>
+                  <p class="title">华硕(ASUS) 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 256GSSD FHD IPS</p>
+				  <p class="price">价格:￥3799.00</p>
+			  </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+              	 <img src="img/index_product/f1/59c37b81N7d967d00.jpg!q90.jpg">
+				  <p class="on_self">2017 | 9成新</p>
+                  <p class="title">华硕(ASUS) 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 256GSSD FHD IPS</p>
+				  <p class="price">价格:￥3799.00</p>
+			  </a>
+          
+			  <a href="03_product_details.html?lid=8" class="v">
+              	  <img src="img/index_product/f1/59e96463N0338ed30.jpg">				  
+				  <p class="on_self">2017 | 9成新</p>
+                  <p class="title">华硕(ASUS) 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 256GSSD FHD IPS</p>
+				  <p class="price">价格:￥3799.00</p>
+			  </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+                  <img src="img/index_product/f1/59f05711N093550fe.jpg!q90.jpg">
+				  <p class="on_self">2017 | 9成新</p>
+                  <p class="title">华硕(ASUS) 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 256GSSD FHD IPS</p>
+				  <p class="price">价格:￥3799.00</p>
+			  </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+              	  <img src="img/index_product/f1/593ac6c1N82b59402.jpg!q90.jpg">
+				  <p class="on_self">2017 | 9成新</p>
+                  <p class="title">华硕(ASUS) 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 256GSSD FHD IPS</p>
+				  <p class="price">价格:￥3799.00</p>
+			  </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+              	  <img src="img/index_product/f1/59ed88fcN5d2d0e5e.jpg!q90.jpg">
+				  <p class="on_self">2017 | 9成新</p>
+                  <p class="title">华硕(ASUS) 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 256GSSD FHD IPS</p>
+				  <p class="price">价格:￥3799.00</p>
+			  </a>
+              	 <a href="03_product_details.html?lid=8" class="v">
+              	  <img src="img/index_product/f1/59020ff0N13a5efd9.jpg!q90.jpg">
+				  <p class="on_self">2017 | 9成新</p>
+                  <p class="title">华硕(ASUS) 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 256GSSD FHD IPS</p>
+				  <p class="price">价格:￥3799.00</p>
+			  </a>
+               <a href="03_product_details.html?lid=8" class="v">
+              	  <img src="img/index_product/f1/593ac6c1N82b59402.jpg!q90.jpg">
+				  <p class="on_self">2017 | 9成新</p>
+                  <p class="title">华硕(ASUS) 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 256GSSD FHD IPS</p>
+				  <p class="price">价格:￥3799.00</p>
+			  </a>
+               <a href="03_product_details.html?lid=8" class="v">
+              	  <img src="img/index_product/f1/5929684bNbb37e4d3.jpg!q90.jpg">
+				  <p class="on_self">2017 | 9成新</p>
+                  <p class="title">华硕(ASUS) 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 256GSSD FHD IPS</p>
+				  <p class="price">价格:￥3799.00</p>
+			  </a>
+		  </div>
+        </div>
+	  </div>
+ <!--楼层 2楼 特色产品-->
+	  <div class="floor" id="f2">
+		  <p><span>特色产品</span>限时出售 | 性价比高 </p>
+		 <div>
+          <div>
+			  <a href="03_product_details.html?lid=8" class="h">
+                 <p>看 · 新 鲜</p>
+                 <p> 联想YOGA新上架</p>
+                 <p>有想法 看胆量</p>
+                 <img src="img/index_product/f2/59f8a1e3Nf7571370.png!q90.png">                      
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v1">
+                  <img src="img/index_product/f2/59f2f283Nc1a2df8f.jpg!q90.jpg">
+              </a>
+              <a href="03_product_details.html?lid=8" class="v1">
+               <img src="img/index_product/f2/download.jpg">
+              </a>
+		  </div>
+           <div>
+			  <a href="03_product_details.html?lid=8" class="h">
+               <p>耍 · 大 牌</p>
+                <p>核心配件超值购买</p>
+                 <p>好想法 看行动</p>
+                 <img src="img/index_product/f2/59f8a23cNd03baba2.png!q90.png">   
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v1">
+              <img src="img/index_product/f2/59f2fcfeN7ebe7d03.jpg!q90.jpg">
+              </a>
+              <a href="03_product_details.html?lid=8" class="v1">
+               <img src="img/index_product/f2/59f8a17dN0563f10f.jpg!q90.jpg">
+              </a>
+		  </div>
+           <div>
+			  <a href="03_product_details.html?lid=8" class="h">
+               <p>玩 · 特 色</p>
+                <p> 特色定制,更加划算</p>
+                 <p>遇想法 要尝试</p>
+                 <img src="img/index_product/f2/59f6968aN0b55c5e2.png!q90.png">
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v1">
+               <img src="img/index_product/f2/59f68e71N81bba82c.jpg!q90.jpg">
+              </a>
+              <a href="03_product_details.html?lid=8" class="v1">
+               <img src="img/index_product/f2/59dacda7Nbd5d0f5a.png!q90.jpg">
+              </a>
+		  </div>
+             <div>
+			  <a href="03_product_details.html?lid=8" class="h">
+               <p>购 · 实 惠</p>
+                <p> 联想YOGA新上架</p>
+                 <p>对想法 要大胆</p>
+                 <img src="img/index_product/f2/596448d2Na2eb8058.png!q90.png">
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v1">
+               <img src="img/index_product/f2/59a3aeccN5703e4cc.jpg!q90.jpg">
+              </a>
+              <a href="03_product_details.html?lid=8" class="v1">
+               <img src="img/index_product/f2/59bf3e7dN193abb4b.jpg!q90.jpg">
+              </a>
+		  </div>
+          </div>
+           <a href="javascript:;" class="prev">上一个</a>
+           <a href="javascript:;" class="next">下一个</a>
+	  </div>
+ <!--楼层 3楼 九成新品-->
+	  <div class="floor" id="f3">
+		  <p><span>九成新品</span>品质保证 | 诚信第一 | 超值购买 </p>
+         <div>
+			  <a href="03_product_details.html?lid=8" class="v2">
+                <ul>
+                    <li></li>
+                    <li>联想刃9000UIY台式机</li>
+                    <li>￥:6666</li>
+                    <li><button>查看详情</button></li>
+                    <li><img src="img/index_product/f3/5a027b4aN4341fa0a.png!q90.png"></li>
+                    <li>lenovo</li>
+                </ul>
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v2">
+                 <ul>
+                    <li></li>
+                    <li>联想刃9000UIY台式机</li>
+                    <li>￥:6666</li>
+                     <li><button>查看详情</button></li>
+                    <li><img src="img/index_product/f3/5a027b4aN4341fa0a.png!q90.png"></li>
+                    <li>lenovo</li>
+                </ul>
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v2">
+                <ul>
+                    <li></li>
+                    <li>联想刃9000UIY台式机</li>
+                    <li>￥:6666</li>
+                     <li><button>查看详情</button></li>
+                    <li><img src="img/index_product/f3/5a027b4aN4341fa0a.png!q90.png"></li>
+                    <li>lenovo</li>
+                </ul>
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v2">
+               <ul>
+                    <li></li>
+                    <li>联想刃9000UIY台式机</li>
+                    <li>￥:6666</li>
+                     <li><button>查看详情</button></li>
+                    <li><img src="img/index_product/f3/5a027b4aN4341fa0a.png!q90.png"></li>
+                    <li>lenovo</li>
+                </ul>
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v2">
+              <ul>
+                    <li></li>
+                    <li>联想刃9000UIY台式机</li>
+                    <li>￥:6666</li>
+                     <li><button>查看详情</button></li>
+                    <li><img src="img/index_product/f3/5a027b4aN4341fa0a.png!q90.png"></li>
+                    <li>lenovo</li>
+                </ul>
+              </a>			
+		  </div>            
+          	 <div>		
+			  <a href="03_product_details.html?lid=8" class="v2">
+                              <ul>
+                    <li></li>
+                    <li>联想刃9000UIY台式机</li>
+                    <li>￥:6666</li>
+                     <li><button>查看详情</button></li>
+                    <li><img src="img/index_product/f3/5a027b4aN4341fa0a.png!q90.png"></li>
+                    <li>lenovo</li>
+                </ul>
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v2">
+                              <ul>
+                    <li></li>
+                    <li>联想刃9000UIY台式机</li>
+                    <li>￥:6666</li>
+                     <li><button>查看详情</button></li>
+                    <li><img src="img/index_product/f3/5a027b4aN4341fa0a.png!q90.png"></li>
+                    <li>lenovo</li>
+                </ul>
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v2">
+                              <ul>
+                    <li></li>
+                    <li>联想刃9000UIY台式机</li>
+                    <li>￥:6666</li>
+                     <li><button>查看详情</button></li>
+                    <li><img src="img/index_product/f3/5a027b4aN4341fa0a.png!q90.png"></li>
+                    <li>lenovo</li>
+                </ul>
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v2">
+                              <ul>
+                    <li></li>
+                    <li>联想刃9000UIY台式机</li>
+                    <li>￥:6666</li>
+                     <li><button>查看详情</button></li>
+                    <li><img src="img/index_product/f3/5a027b4aN4341fa0a.png!q90.png"></li>
+                    <li>lenovo</li>
+                </ul>
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v2">
+                              <ul>
+                    <li></li>
+                    <li>联想刃9000UIY台式机</li>
+                    <li>￥:6666</li>
+                     <li><button>查看详情</button></li>
+                    <li><img src="img/index_product/f3/5a027b4aN4341fa0a.png!q90.png"></li>
+                    <li>lenovo</li>
+                </ul>
+              </a>
+		  </div>     
+	  </div>
+ <!--楼层 4楼 买卖流程-->
+	  <div class="floor" id="f4">
+		  <p><span class="">卖买流程</span><a>买电脑流程</a> | <a> 卖电脑流程</a></p>
+		  <div>
+			 <p>商城选购</p>
+			 <p>自己挑选</p>
+			 <p><a href="">商城选购</a>
+				 <a href="">与卖家沟通</a>
+				 <a href="">通过爪子保证</a>
+				 <a href="">交易购买</a>
+			 </p>
+		  </div>
+	  </div>
+  <!--5楼 最新上架-->
+	  <div class="floor" id="f5">
+		  <p><span>最新上架</span>上千种精选产品 | 最快30分钟审批 | 98%以上可申请通过 | 金融专员全程服务</p>
+		  <div>
+			  <a href="03_product_details.html?lid=8" class="v">
+              <ul> 
+                <li><img src="img/index_product/f5/58cfc464Nf10b4300.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>   
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v">        
+               <ul> 
+                <li><img src="img/index_product/f5/58cfc464Nf10b4300.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>   
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+               <ul> 
+                <li><img src="img/index_product/f5/58cfc464Nf10b4300.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>  
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+               <ul> 
+                <li><img src="img/index_product/f5/58cfc464Nf10b4300.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>           
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+               <ul> 
+                <li><img src="img/index_product/f5/58cfc464Nf10b4300.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>              
+              </a>
+			  <a href="03_product_details.html?lid=8;" class="v">
+               <ul> 
+                <li><img src="img/index_product/f5/58cfc464Nf10b4300.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>             
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+               <ul> 
+                <li><img src="img/index_product/f5/596448d2Na2eb8058.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>            
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+               <ul> 
+                <li><img src="img/index_product/f5/596448d2Na2eb8058.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>             
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+               <ul> 
+                <li><img src="img/index_product/f5/596448d2Na2eb8058.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>           
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+               <ul> 
+                <li><img src="img/index_product/f5/596448d2Na2eb8058.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>            
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+               <ul> 
+                <li><img src="img/index_product/f5/596448d2Na2eb8058.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>             
+              </a>
+			  <a href="03_product_details.html?lid=8" class="v">
+               <ul> 
+                <li><img src="img/index_product/f5/596448d2Na2eb8058.png!q90.png"></li>
+                <li>华硕(ASUS)</li>
+                <li>华硕 灵耀S4000UA 14英寸超窄边框超轻薄笔记本电脑(i5-7200U 8G 128GSSD+1T FHD)</li>                        
+                <li>￥:6666.00 </li>
+                <li>666人已买 </li>
+               </ul>       
+              </a>
+			
+		  </div>
+	  </div>
+  </section>
+  <aside>
+      <div>
+	   <p><span>让每个人都拥有</span><span>更好的电脑</span>
+		   <p>免费咨询电话400-820-8820</p>
+	   </p>
+      </div>
+	  <div>
+		  <a href="02_product_list.html">我要买电脑</a>
+		  <a href="lookforward.html">我要卖电脑</a>
+	  </div>
+  </aside>
+<!--页面最底部-->
+<footer id="footer">
+
+</footer>
+ </body>
+ <script src="js/jquery/jquery.js"></script>
+ <script src="js/header.js"></script>
+ <script src="js/footer.js"></script>
+ <script src="js/banner.js"></script>
+ <script src="js/index.js"></script>
+ <script src="js/lift.js"></script>   
+</html>

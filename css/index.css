@@ -1,0 +1,507 @@
+ div.search{
+		  height:320px;
+		  position:relative;
+	  }
+	  div.buy,
+	  div.quckly_register,
+	  div.register_success
+	  {
+		  margin:0 50%;
+		  padding:0;
+		  float:left;
+		  position:absolute;
+		  z-index:10;
+		  height:320px;
+		  display:block;
+	  }
+	  div.buy{
+		  left:-500px;
+		  width:600px;
+		  background:#fff;
+		  padding:10px;
+		  box-sizing: border-box;
+	  }
+	  div.quckly_register,
+	  div.register_success
+	  {
+		  left: 100px;
+		  width: 400px;		 
+		  padding:10px;
+		  box-sizing: border-box;		 
+	  }	
+     div.register_success{
+	  z-index:11;	 
+	  background:rgba(0,0,0,0.5);
+	  display:none;
+	 }
+	 div.register_success p{
+	 height:300px;
+	 line-height:100px;
+	 text-align:center;
+	 }
+	 div.register_success span.msg{
+	  color:#fff;
+	  font-size:30px;
+	  margin:0 10px;
+	 }
+	 div.register_success button.thenLogin{
+	  color:#3CB46D;
+	  font-size:18px;
+	  margin:0 15px;
+	  background:#fff;
+	  padding:0 10px;
+	 }
+	 div.register_success button.thenBack{
+	  color:#97CF00;
+	  font-size:18px;
+	  margin:0 15px;
+	  background:#fff;
+	  padding:0 10px;
+	 }
+     div.register_success span.thenClose{
+	 color:#E4393c;
+	 }
+	  div.buy p.search_box>span.input_box{
+	  font-size:0;
+	  }
+	  div.buy p span input{
+		  outline:0;
+		  border:1px solid #27b1f6;
+		  border-radius: 5px 0 0  5px ;
+		  width:400px;
+		  height:30px;
+		  padding-left:20px;
+		  margin-left:20px;
+		  line-height:30px;		 
+		  box-sizing:border-box;
+		  background-color: #f5f5f5;
+		  font-size:14px;
+		  color:#666;
+		  vertical-align:top;
+	  }
+	  div.buy p span a{
+		  text-decoration:none;
+		  display: inline-block;
+		  width:60px;
+		  height:30px;
+		  line-height:29px;
+		  font-size: 20px;
+		  box-sizing:border-box;
+		  border-radius:0 5px 5px 0;
+		  background: linear-gradient(to top,#27b1f6,#0aa1ed);
+		  text-align: center ;
+	  }
+	  div.buy .list span{
+		  height:30px;
+		  font-size:20px;
+		  margin:0;
+		  padding:0;
+	  }
+	  div.buy .list ul{
+		   height:60px;
+		   margin:0;
+		   padding:0;
+		   list-style:none;
+	   }
+	  div.buy .list ul li{
+		  float:left;
+		  height:20px;
+		  line-height: 20px;
+		  margin:20px;
+		  padding:0;
+		  list-style:none;
+	  }
+      div.buy .list ul li>a{
+	   height:20px;
+	   line-height: 20px;
+	   text-decoration:none;
+	   font-size:16px;
+	   color:#666;
+	  }
+	  div.quckly_register p>span:not(.prompt){
+	  display:inline-block;
+	  width:90px;
+	  height:25px;
+	  line-height:25px;
+	  font-size:20px;
+	  color:#3CB46D;
+	  }
+	  div.quckly_register p>input{
+	     font-size:16px;
+		 height:25px;
+		 width:165px;
+	     line-height:25px;
+		 padding-left:10px;
+		 background:rgba(255,255,255,0.3);
+		 color:#5F81D3;
+	  }
+	   div.quckly_register p>input.code{
+	    width:60px;
+	   }
+	  div.quckly_register p.btn{
+	  text-align:center;
+	  }
+	  div.quckly_register p.btn>button{
+	     font-size:16px;
+		 height:30px;		
+	     line-height:30px;
+		 text-align:center;
+		 background:rgba(60,180,109,0.8);
+		 border:0;
+		 outline:none;
+		 color:#fff;
+		 padding:0 20px;
+		 margin-left:10px;
+	  }
+	  div.quckly_register p.btn>button:active{
+	   opacity:0.1;
+	  }
+	   div.quckly_register p.btn>button.clear{
+	    background:rgba(234,180,116,0.8);
+		
+	   }
+	   div.quckly_register p>span.prompt{
+	     display:inline;		
+		 font-size:14px;
+	   }
+	  section{
+		  width:1200px;
+		  position:relative;
+		  margin:0 50%;
+		  left:-600px;
+	  }
+	  section div.floor p span{
+		  font-size:25px;
+		  color:black;
+		  margin-right:20px;
+		 
+	  }
+	  section div.floor p{
+		  color:#858D96;
+	  }
+	  section div.floor>div{		 
+		  width:1200px;			  
+	   }
+	   section  #f1>div{
+	    overflow:hidden;
+        height:350px;	  
+	    background:linear-gradient(to right,#75B1F7 0%,
+		                       #718DE9 70%,#6058BF 100%);
+	   }
+       section  #f1>div>div{
+	    overflow:hidden;
+	    float:left;	 
+        height:270px;
+		width:1560px;
+        margin: 40px 0 0 -180px;
+		font-size:0;
+	   }
+	   section  #f1 div>a{
+	    display: inline-block;
+		background:#fff;
+	   }
+       section  #f2{
+	  position:relative;
+	   }
+       section  #f2>a{
+	   position:absolute;
+	   text-decoration:none;
+	   top:60px;
+	   width:50px;
+	   height:336px;
+	   line-height:336px;
+	   text-align:center;
+	   opacity:0.3;
+	   background:linear-gradient(to right,#000 0%,#eee 100%);
+	   color:blue;
+	   }
+      section  #f2>a.prev{
+	  left:3px;
+	  }
+	 section  #f2>a.next{
+	  right:0;
+	  }
+     section  #f2>a.prev:hover{
+	   opacity:0.8;
+	  }
+	 section  #f2>a.next:hover{
+	   opacity:0.8;
+	  }
+       section  #f2 div{
+	      display:flex;
+	   }
+	   section  #f2>div{	  
+	   	overflow:hidden;
+	   }
+	   section  #f2>div>div{	    
+	    flex-wrap:wrap;
+	   justify-content:space-between;
+        height:350px;		
+	    width:400px;
+	   }
+     section  #f2>div>div>a.h{
+	  position:relative;
+	  line-height:40px;
+	  padding:20px;
+	  box-sizing:border-box;
+	 }
+     section  #f2>div>div>a p:first-child{
+	   width:70px;
+	   color:#fff;
+	   border:2px solid #fff;
+       font-size:16px;
+	   font-weight:700;
+	   line-height:20px;	  
+	 }
+     section  #f2>div>div>a p:nth-child(2){
+	   width:120px;
+	   color:#FDEE39;	  
+       font-size:14px;
+	 }
+      section  #f2>div>div>a p:nth-child(3){
+	   width:120px;
+	   color:#E3413F;	  
+       font-size:14px;	 
+	 }
+    section  #f2>div>div>a.h img{
+	  position:absolute;
+       right:5px;
+	   top:45px;
+	 } 
+	section  #f2>div>div>a.h img:hover{
+      right:15px;
+	  transition:right 0.1s linear;
+	 }
+   
+	   section  #f3 div{	
+	    display:flex;
+	    flex-wrap:wrap;
+	    justify-content:space-around;
+		margin-bottom:50px;
+	   }
+	   section  #f3 div>a>ul{
+	    width:100%;
+	    height:100%;
+		position:relative;
+	    list-style:none;
+        padding:0;
+		perspective:470px;
+        margin:0px;
+	   }
+        section  #f3 div>a>ul>li:first-child{
+		width:100%;
+		height:100%;
+		position:absolute;
+		text-align:center;
+		background:#000;
+		opacity:0.1;
+		z-index:0;	
+		box-shadow:0px -30px 150px 13px #6666ff inset;
+		}
+	   section  #f3 div>a>ul>li:nth-child(2){
+	      line-height:50px;
+		  text-align:center;
+		}
+	    section  #f3 div>a>ul>li:nth-child(3){
+		   line-height:30px;
+		  font-size:20px;
+		  text-align:center;
+		  color:#E4383B;
+		}
+	  section  #f3 div>a>ul>li:nth-child(4){		
+		  text-align:center;		
+		}
+       section  #f3 div>a>ul>li:nth-child(4) button{
+	    outline:none;
+		border:0;
+		font-size:16px;
+		border-radius:3px;
+		color:#0000ff;
+	   }
+       section  #f3 div>a>ul>li:nth-child(5){
+	     position:absolute;
+		 bottom:0px;		
+		 z-index:1;
+	   }
+       section  #f3 div>a>ul>li>img{
+	     margin:0 15px;
+	   }
+       section  #f3 div>a>ul>li>img:hover{	
+		transform:scale(1.1);
+	   }
+	   section  #f3 div>a>ul>li:last-child{
+	     position:absolute;
+	     background:#6666ff;
+		 width:200px;
+		 height:200px;
+		 line-height:200px;
+	     transform:rotate3D(1,0,0,90deg);
+	     border-radius:50%;
+		 bottom:-86px;
+		 color:red;
+		 text-align:center;
+		 font-size:50px;
+		 box-shadow:0px -30px 10px 13px #6666ff ;
+	   }
+       	section  #f4 div{
+		 display:flex;
+	    justify-content:space-around;
+	    flex-wrap:wrap;		 
+	    flex-direction:column;
+        height:340px;		
+	   }
+	   section  #f5 div{
+	      display:flex;
+	    justify-content:space-around;
+		align-items:center;
+	    flex-wrap:wrap;		 
+        height:600px;		
+	   }
+      section  #f5 div>a>ul{
+	    width:100%;
+	    height:100%;	
+	    list-style:none;
+        padding:0;	
+        margin:0px;
+	  }
+      section  #f5 div>a>ul:hover{
+      border:1px solid red;
+	  }
+      section  #f5 div>a>ul>li:first-child{
+	   
+	  }
+	  section  #f5 div>a>ul>li:nth-child(2){
+	     font-size:16px; 
+	     text-align:center;
+		 color:blue;
+	  }
+	   section  #f5 div>a>ul>li:nth-child(3){	  
+	    font-size:12px; 
+	    color:black;
+		text-indent:25px;
+	  }
+	  section  #f5 div>a>ul>li:nth-child(4){
+	   width:100%;
+	   text-align:center;
+	    font-size:18px; 
+	    color:#F10214;
+	  }
+	   section  #f5 div>a>ul>li:nth-child(5){
+	   width:100%;
+	   text-align:right;
+	    font-size:14px; 
+	    color:#3CB46D;
+	  }
+        section  #f5 div>a>ul>li img:hover{
+	   transform:scale(1.1);
+		 top:45px;
+	   }
+	  section div.floor div a.v{		
+		  width:180px;
+		  height:280px;
+		  text-decoration:none;
+		  border:1px solid #dddddd;
+	  }
+	  section div.floor div a.h{
+		  border:1px solid ##dddddd;
+		  width:400px;
+		  height:177px;
+		  background:#fff;
+		  margin:10px 5px;
+		  text-decoration:none;
+	  }
+      	  section div.floor div a.h1{
+		  border:1px solid ##dddddd;
+		  width:400px;
+		  height:124px;
+		  background:#fff;
+		  margin:10px 5px;
+	  }
+      	  section div.floor div a.v1{
+		  margin:10px 5px;
+		  border:1px solid #dddddd;
+		  width:187px;
+		  height:140px;
+		  background:#fff;
+		  text-decoration:none;
+	  }
+         section div.floor div a.v2{
+		  margin:10px 5px;
+		  border:1px solid #dddddd;
+		  width:200px;
+		  height:260px;
+		  background:#fff;
+		  text-decoration:none;
+	  }
+	  section div.floor div a.v img{
+          margin:0 11px;
+		  width:160px;
+		  height:160px;
+	  }
+	  section div.floor div a.v p.on_self{
+          width:160px;				
+		  color:#F6C312;
+		  font-size:14px;			
+		  font-weight:700;
+	  }
+
+	  section div.floor div a.v p.title{
+          width:160px;
+		  height:36px;
+		  line-height:18px;
+		  color:#333;
+		  font-size:10px;
+		  overflow:hidden;
+		  text-align:center;
+		  font-weight:700;
+	  }
+       	  section div.floor div a.v p.price{
+		  width:160px;
+		  height:36px;
+		  line-height:36px;
+		  color:#E4383B;
+		  font-size:18px;		
+		  text-align:center;
+		  font-weight:800;
+	  }
+      	  section div.floor div a.v p{
+          margin:0 11px;	 
+	  }   
+     	  section #f1 div a:hover{
+        border:1px solid red;
+/*        flex-grow:0.1; */
+/*		  box-shadow:-2px 2px 5px 5px #6B6B6B;*/
+      }
+     aside{
+		 height:200px;
+		text-align:center;
+        margin-top:80px;
+	 }
+	  aside div{
+		  display:inline-block;
+		  width:400px;
+		  text-align:center;
+	  }
+	  aside div:first-child p span:first-child {
+          font-size: 25px;
+	  }
+	  aside div:first-child p span:nth-child(2){
+		  font-size: 25px;
+		  color:#3CB46D;
+	  }
+	  aside div:first-child p{
+		  width:320px;
+		  color:#858D96;
+	  }
+	  aside>div a{
+		  display:inline-block;
+		  width:180px;
+		  height:64px;
+		  border-radius:5px;
+		  background:#3CB46D;
+		  line-height: 64px;
+		 color:white;
+	  }
+	  aside>div a:last-child{
+		  background:#97cf00;
+	  } 

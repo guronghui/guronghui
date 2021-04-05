@@ -1,0 +1,31 @@
+
+/*底部*/
+ div.footer_main{
+ background:#eee;
+ }
+ div.footer_main p img{
+ vertical-align:top;
+ }
+ div.footer_main div.foot_left,
+ div.footer_main div.service,
+  div.footer_main div.download
+ {
+ height:100%;
+ display:inline-block;
+ }
+div.footer_main div.foot_left ul{
+display:inline-block;
+width:300px;
+height:100%;
+}
+div.footer_main div.foot_left ul li{
+font-size:14px;
+list-style:none;
+}
+div.footer_main div.foot_left ul li a{
+  text-decoration: none;
+  color:#666;
+}
+  div.footer_main div.record{
+  text-align:center;
+  }

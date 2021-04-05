@@ -1,0 +1,84 @@
+  div.banner{
+		  height:400px;
+		  width:1200px;
+		  position:relative;
+		  margin:0 50%;
+		  left:-600px;
+	  }
+	  div.banner>ul.image{
+		   height:400px;
+		   margin:0;
+		   padding:0;
+		   list-style:none;
+		   position:absolute;
+	  }
+	   div.banner>ul.image li{
+		float:left;
+		position:absolute;
+
+	   }
+	   div.banner>ul.image li img{
+	   width:1200px;
+	   }
+ .img-change {
+     z-index:8;
+	 opacity:1;
+	 transition:opacity 1s  linear;
+	 }
+ .img-clear {
+     z-index:0;
+	 opacity:0;
+ }
+ div.banner>ul.point{
+    position:absolute;   
+   list-style:none;
+    float:left;
+     z-index:10;
+	 padding:0;
+	 margin:0;
+    bottom:5px;
+	left:456px;
+ }
+ div.banner>ul.point>li{
+  float:left;
+  margin:0 30px;
+ }
+ div.banner>ul.point>li>em{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;  
+    cursor: pointer;
+ }
+ .point-change {   
+     background-color:#0CA4EC;
+	 opacity:1;
+	 transition:all 1s  linear;
+	 }
+ .point-clear { 
+  opacity:0.5;
+  background-color: #fff;    
+ }
+div.banner a.ck-prev,div.banner a.ck-next{  
+	position: absolute;
+    top: 50%;
+    z-index:10;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+	border-radius:50%;
+	margin:0;
+    text-indent:-9999px; 
+	opacity:0.2;
+}
+div.banner a.ck-prev{  
+ left:45px;	
+ background:#000 url(../img/banner/arrow-left.png)  no-repeat center;
+}
+div.banner a.ck-next{  
+ right:45px;
+ background:#000 url(../img/banner/arrow-right.png)  no-repeat center;
+}
+div.banner a.ck-prev:hover,div.banner a.ck-next:hover{  
+  opacity:0.5;
+}

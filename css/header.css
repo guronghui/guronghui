@@ -1,0 +1,227 @@
+  div.main{
+      width:1200px;
+      position:relative;
+      z-index:10;
+      margin:0 50%;
+      left:-600px;     
+  }
+	#header-top{
+	float:left;
+	padding:0 20px;
+	}
+	#province{
+	 position:absolute;
+     left:100px; 
+	 top:15px;
+	 z-index:5;
+     height:40px;
+	 width:75px;
+   	 line-height:40px;
+	 font-size:14px;
+	 cursor:pointer;
+     text-align:center;
+	}
+	#province>p{
+	margin:0;
+	}
+		/*省份信息的表单*/
+   div.main>div.province_help_list{
+   position:absolute;
+   left:100px;
+   top:54px;
+   background:#fff;
+   z-index:5;
+   display:none; 
+	}
+   div.main>div.province_help_list p{
+   display:inline-block;
+   width:470px; 
+   margin:0;
+   font-size:0;/*去除子元素之间的空隙*/
+   }
+   div.main>div.province_help_list div:nth-child(2){
+     border-bottom:1px solid #E6E6E6;
+   }
+   div.main>div.province_help_list div:nth-child(2)~div{
+   margin:10px 0;
+   border-bottom:1px dashed #E6E6E6;
+   }
+   div.main>div.province_help_list div>span{
+       vertical-align:top;
+	   padding:6px 0 0 10px;
+   }
+    div.main>div.province_help_list div>p{
+	margin:0px;
+	padding:3px;
+	}
+   div.main>div.province_help_list span,
+   div.main>div.province_help_list p :nth-child(n){
+    display:inline-block;
+    width:52px;
+	height:15px;
+	font-size:12px;
+	line-height:15px;
+	text-decoration:none;
+	color:black;
+	}
+   div.main>div.province_help_list p :nth-child(n):hover{
+   	color:#22AC38;
+   }
+	#list{
+	float:right;
+	list-style:none;
+    margin:0;
+	padding:0;
+	}
+    #list li{
+	float:left;
+	font-size:14px;
+	margin:6px 20px 0;	
+    line-height:60px;
+	}
+  #list li:not(:nth-child(8))>a{
+    text-decoration:none;
+    color:#333;
+   }
+   #list li:not(:nth-child(8))>a:hover{
+    color:#3CB46D;
+   }
+   #list li:last-child{
+    font-size:24px;
+	font-family:arial helvetica sans-serif;
+   }
+   div.line ,div.line>hr{   
+	width:1200px;
+    float:left;
+	padding:0;
+    margin:0;
+/*    display:none;*/
+   }
+/*   页面搜索*/
+ div.main>div.header_search{
+  float:left;
+  position:relative;
+  width:1200px;
+  height:90px; 
+ }
+
+ div.main>div.header_search>a{
+ display:inline-block;
+ width:180px;
+ height:60px;
+ background:green;
+ margin:22px 0;
+ }
+ /*全部分类*/
+  div.main>div.header_search>div.header_all_classify{
+   position:absolute;
+   display:inline-block;
+   width:100px;
+   height:25px;
+   line-height:25px;
+   margin:32px 0;
+   left:200px;
+   border:1px solid #ccc;
+   border-bottom:0;
+   z-index:2;
+   background:#ECF0FF;
+/*   border-bottom:0;*/
+   cursor:pointer;
+    background:#fff;
+	padding-left:5px;
+ }
+  div.main>div.header_search>div.header_all_classify>span{
+   margin-left:10px; 
+  }
+  div.main>div.header_search>div.help_classify{
+   position:absolute;
+   width:200px;
+   left:200px;
+   top:57px;
+   border:1px solid #ccc;
+   background:#fff;
+   z-index:1;
+   padding:5px;
+   display:none;
+  }
+  div.main>div.header_search>div.help_classify a{
+   display:inline-block;
+   text-decoration:none;
+   color:#005AA0;
+   font-size:16px;
+  }
+
+/*收索框*/
+  div.main>div.header_search>div.header_search_box{
+     display:inline-block;
+	 position:absolute;
+     left:450px;
+     border:2px solid #E4393c;
+	 padding:0;
+	 box-sizing:border-box;
+	 top:10px;
+  }
+    div.main>div.header_search>div.header_search_box>span{
+	 display:inline-block;
+     height:38px;
+	 width:70px;
+	 text-align:center;
+     line-height:35px;
+     font-size:20px;
+	 background:#E4393c;
+	 border:1px solid #E4393c;
+	 cursor:pointer;
+	 color:#fff;
+  }
+   div.main>div.header_search>div.header_search_box>input{
+     width:375px;
+     height:35px;
+	 line-height:35px;
+	 border:0;
+     outline:none;
+	 font-size:16px; 
+	 background:#ECF0FF;
+	 padding:0 5px;
+  }
+  div.main>div.header_search>div.help_show{
+   position:absolute;
+   width:455px;
+   height:20px;
+   left:450px;
+   top:54px;
+  }
+  div.main>div.header_search>div.help_show>a{
+     color:#999999;
+     font-size:14px;
+    text-decoration:none;
+	margin:0 10px 0 5px;
+  }
+   div.main>div.header_search>div.help_search{
+   position:absolute;
+   width:455px;
+   left:450px;
+   top:54px;
+   border:1px solid #ccc;
+   background:#fff; 
+  }
+  div.main>div.header_search>div.help_search a{
+    display:block;
+    text-decoration:none;
+	font-size:14px;
+    color:#666;
+	height:20px;
+	line-height:20px;
+    overflow:hidden;
+  }
+  div.main>div.header_search>div.help_search p{
+   margin:10px 0 5px 0;
+   padding:0 5px;
+  }
+  div.main>div.header_search>div.help_search a.close_help{
+   text-align:center;
+   color:red;
+  }
+   div.main>div.header_search>div.help_search a:hover{
+   background:#ECF0FF;
+   color:#E4393c;
+   }

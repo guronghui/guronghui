@@ -1,0 +1,43 @@
+    div.out_point_show{
+    position:fixed;
+    width:400px;
+    height:150px;
+    border:3px solid gray;
+    margin:0 50%;
+    left:-200px;
+    top:200px;
+	z-index:14;
+	background:white;
+    }
+    div.out_point_close{
+    display:none;
+    width:0;
+    height:0;
+    }
+     #out_point p{ 
+    width:400px;
+    height:30px;
+    line-height:30px;
+    font-size:20px;
+    padding-left:30px;
+    }
+   #out_point>input{ 
+    margin-left:70px;
+	opacity:0;
+   
+    }
+    #out_point label{
+    display:inline-block;
+    width:100px;
+    height:30px;
+    font-size:20px;
+    text-align:center;
+    border:1px solid #b7b7b7;
+    margin-left:-30px;
+    }
+    .choose_active{
+    background:#999999;
+    }
+   .not_choose_active{
+    background:#dbdbdb;
+    }
