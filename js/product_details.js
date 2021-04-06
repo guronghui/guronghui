@@ -2,21 +2,21 @@
 show_header();
 //头部的收索功能
 $.ajax({
-  url: 'data/product/details.php',
-  data: 'lid='+location.search.split('=')[1],
-  success: function(result){
-  //console.log(result.details.picList);
-  var img=result.details.picList;
-  var html="";
-   html+=`<div id="md-images" class="md-images">`;
-	
-	for(i=0;i<img.length;i++){
-	html+=` 
+  url: "data/product/details.php",
+  data: "lid=" + location.search.split("=")[1],
+  success: function (result) {
+    //console.log(result.details.picList);
+    var img = result.details.picList;
+    var html = "";
+    html += `<div id="md-images" class="md-images">`;
+
+    for (i = 0; i < img.length; i++) {
+      html += ` 
     <div id="" class="md-image">
             <img src="${img[i].md}">
     </div>`;
-	};
-html+=`
+    }
+    html += `
 	</div>
 		<div id="" class="md-mouse-move"></div>
 		<div id="" class="md-mouse-over"></div>
@@ -27,25 +27,25 @@ html+=`
 		  </div>
 		 <div id="" class="sm-images">
 	`;
-	for(i=0;i<img.length;i++){
-	html+=` 
+    for (i = 0; i < img.length; i++) {
+      html += ` 
     <div id="" class="sm-image">
            <img src="${img[i].sm}">
     </div> `;
-	};
+    }
 
- html+=` 
+    html += ` 
 	</div>  
     </div>
    <div class="product_lg_lgbox">
 	`;
-  	for(i=0;i<img.length;i++){
-	html+=` 
+    for (i = 0; i < img.length; i++) {
+      html += ` 
     <div id="" class="lg-image">
             <img src="${img[i].lg}">
     </div>`;
-	};
-   html+=`
+    }
+    html += `
 	   </div>
     <div  class="product_info_box">
         <div id="" class="product_name">          
@@ -89,15 +89,15 @@ html+=`
         <div id="" class="product_choose_size">          
            <span class="">选择尺寸<span></span></span>
             <ul >
-   `; 
-     	for(i=0;i<7;i++){
-	     html+=` 
+   `;
+    for (i = 0; i < 7; i++) {
+      html += ` 
             <li>
 			 <img src="img/product_detail/product_detail/sm/59f056c4Ncae61937.jpg" width="40" height="40" border="0" alt="">
                   23.5英寸/京东专供曲面/好评过万
 			</li>`;
-	};
-     html+=`
+    }
+    html += `
 	 </ul>
         </div>
         <hr>
@@ -105,14 +105,14 @@ html+=`
            <span class="">选择颜色<span></span></span>
       <ul >
 	 `;
-      	for(i=0;i<4;i++){
-	     html+=` 
+    for (i = 0; i < 4; i++) {
+      html += ` 
            <li>
 			 <img src="img/product_detail/product_detail/sm/59f056c4Ncae61937.jpg" width="40" height="40" border="0" alt="">
                   23.5英寸/京东专供曲面/好评过万
 		   </li>`;
-	};
-    html+=`	
+    }
+    html += `	
 	 </ul>
         </div>
        <div id="" class="product_shoping">
@@ -126,73 +126,68 @@ html+=`
     </div> 
     `;
 
-  $("#product_detail_box").html(html);
-  
-/**功能部分**/
- //点击小图时大图和中图切换
-var $sm=$("div.sm-images>div.sm-image");
-var $md=$("div.product_detail_box div.md-image");
-var $lg=$("div.product_lg_lgbox>div.lg-image");
-for(let n=1;n<=$sm.length;n++ ){
-  $("div.sm-images>div.sm-image:nth-child("+n+")").click(function(){
-     $sm.css("border","2px solid white");
-	 $(this).css("border","2px solid red");
-	 $md.css("z-index",0 );
-	$("div.product_detail_box div.md-image:nth-child("+n+")")
-		.css("z-index",5 );
-    $lg.css("z-index",0 );
-	$("div.product_lg_lgbox>div.lg-image:nth-child("+n+")")
-		.css("z-index",5 );
-  });
-}
-//小图两侧按钮点击时移动效果
- var $sm_images=$("section div.sm-image-box>div.sm-images");
-  var $sms=$("section div.sm-image-box>div.sm-images>div.sm-image");
-$("div.sm-image-box div.sm-image-prev").click(function(){
-    var prevl=-($sms.length-5)*78+30;
-   var ml=parseInt($sm_images.css("margin-left"));
-    ml<=prevl?""
-		: $sm_images.css("margin-left",ml-78);
-   
-});
-$("div.sm-image-box div.sm-image-next").click(function(){
-    
- var ml=parseInt($sm_images.css("margin-left"));
-  ml>=30?""
-       :$sm_images.css("margin-left",ml+78);
- 
-});
-//鼠标移入中图，大图显示相应的位置
- var $move=$("div.md-mouse-move");
-$move.mouseenter(function(e){
-  
-  $("div.md-mouse-over").css("display","block"); 
-  $("div.product_lg_lgbox").css("display","block"); 
+    $("#product_detail_box").html(html);
 
+    /**功能部分**/
+    //点击小图时大图和中图切换
+    var $sm = $("div.sm-images>div.sm-image");
+    var $md = $("div.product_detail_box div.md-image");
+    var $lg = $("div.product_lg_lgbox>div.lg-image");
+    for (let n = 1; n <= $sm.length; n++) {
+      $("div.sm-images>div.sm-image:nth-child(" + n + ")").click(function () {
+        $sm.css("border", "2px solid white");
+        $(this).css("border", "2px solid red");
+        $md.css("z-index", 0);
+        $("div.product_detail_box div.md-image:nth-child(" + n + ")").css(
+          "z-index",
+          5
+        );
+        $lg.css("z-index", 0);
+        $("div.product_lg_lgbox>div.lg-image:nth-child(" + n + ")").css(
+          "z-index",
+          5
+        );
+      });
+    }
+    //小图两侧按钮点击时移动效果
+    var $sm_images = $("section div.sm-image-box>div.sm-images");
+    var $sms = $("section div.sm-image-box>div.sm-images>div.sm-image");
+    $("div.sm-image-box div.sm-image-prev").click(function () {
+      var prevl = -($sms.length - 5) * 78 + 30;
+      var ml = parseInt($sm_images.css("margin-left"));
+      ml <= prevl ? "" : $sm_images.css("margin-left", ml - 78);
+    });
+    $("div.sm-image-box div.sm-image-next").click(function () {
+      var ml = parseInt($sm_images.css("margin-left"));
+      ml >= 30 ? "" : $sm_images.css("margin-left", ml + 78);
+    });
+    //鼠标移入中图，大图显示相应的位置
+    var $move = $("div.md-mouse-move");
+    $move.mouseenter(function (e) {
+      $("div.md-mouse-over").css("display", "block");
+      $("div.product_lg_lgbox").css("display", "block");
+    });
+    $move.mousemove(function (e) {
+      var x = 5,
+        y = 5;
+      x = e.offsetX - 128 + 5;
+      y = e.offsetY - 149 + 5;
+      x >= 199 ? (x = 199) : "";
+      y >= 157 ? (y = 157) : "";
+      x <= 5 ? (x = 5) : "";
+      y <= 5 ? (y = 5) : "";
+      $("div.md-mouse-over").css({
+        left: x,
+        top: y,
+      });
+      $("div.lg-image").css({
+        left: (-(x - 5) * 800) / 450,
+        top: (-(y - 5) * 800) / 450,
+      });
+    });
+    $move.mouseleave(function () {
+      $("div.md-mouse-over").css("display", "none");
+      $("div.product_lg_lgbox").css("display", "none");
+    });
+  },
 });
-$move.mousemove(function(e){
-var x=5,y=5;
- x=e.offsetX-128+5;
- y=e.offsetY-149+5;
-  x>=199?x=199:"";
-  y>=157?y=157:"";
-  x<=5?x=5:"";
-  y<=5?y=5:"";
-  $("div.md-mouse-over").css({
-   "left":x,
-	"top":y,    
-  });
-   $("div.lg-image").css({
-   "left":-(x-5)*800/450,
-	"top":-(y-5)*800/450,    
-  });  
- });
-$move.mouseleave(function(){
-  $("div.md-mouse-over").css("display","none");
-    $("div.product_lg_lgbox").css("display","none"); 
-});
-  
-  }
-});
-
-

@@ -1,12 +1,12 @@
 /**加载已勾选的购物车条目**/
 $.ajax({
-  url: 'data/cart/list_checked.php',
-  success: function(result){
-    if(result.code===200){
+  url: "data/cart/list_checked.php",
+  success: function (result) {
+    if (result.code === 200) {
       var totalPrice = 0;
-      var html = '';
-      $.each(result.data, function(i, l){
-        totalPrice += l.price*l.count;
+      var html = "";
+      $.each(result.data, function (i, l) {
+        totalPrice += l.price * l.count;
         html += `
         <ul class="item_detail">
             <li class="p_info">
@@ -23,14 +23,16 @@ $.ajax({
             <li class="p_price">
                 <i>阿甲专属价</i>
                 <br/>
-                <span class="pro_price">￥<span class="ppp_price">${l.price}</span></span>
+                <span class="pro_price">￥<span class="ppp_price">${
+                  l.price
+                }</span></span>
             </li>
             <li class="p_count">X<span>${l.count}</span></li>
-            <li class="p_tPrice">￥<span>${l.price*l.count}</span></li>
+            <li class="p_tPrice">￥<span>${l.price * l.count}</span></li>
         </ul>
         `;
-      })
-      $('#product_list').html(html);
+      });
+      $("#product_list").html(html);
     }
-  }
-})
+  },
+});
